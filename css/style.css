@@ -1,20 +1,114 @@
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globales para el body */
 body {
-font-family: Arial, sans-serif;
-margin: 20px;
-background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 20px;
+  line-height: 1.6;
 }
+
+/* Header con fondo gris claro, centrado y con sombra */
 header {
-background: #e0e0e0;
-padding: 10px;
-text-align: center;
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Estilos de los enlaces en el menú de navegación */
 nav a {
-margin: 0 10px;
-text-decoration: none;
-color: #333;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
+
+nav a:hover {
+  color: #3498db;
+}
+
+/* Estilos para los formularios */
 form {
-background: #fff;
-padding: 15px;
-border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
 }
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.6);
+}
+
+/* Botones con estilo moderno */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  nav a {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form input, form textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+/*Actualizaciones señores Aqui estuvo angel lugo 2.0 
